@@ -1,0 +1,278 @@
+{
+  "contractName": "Constants",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "p",
+          "type": "uint32"
+        }
+      ],
+      "name": "setChunkToBeChallenged",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "n",
+          "type": "uint32"
+        }
+      ],
+      "name": "setN",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getN",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nbOfChunks",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getAll",
+      "outputs": [
+        {
+          "name": "k",
+          "type": "uint32"
+        },
+        {
+          "name": "n",
+          "type": "uint32"
+        },
+        {
+          "name": "l",
+          "type": "uint32"
+        },
+        {
+          "name": "m",
+          "type": "uint32"
+        },
+        {
+          "name": "p",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "k",
+          "type": "uint32"
+        }
+      ],
+      "name": "setK",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getP",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "snToBeChallenged",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getL",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "l",
+          "type": "uint32"
+        }
+      ],
+      "name": "setSnToBeChallenged",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getM",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "snNb",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "chunkToBeChallenged",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "nbOfChunksEC",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "m",
+          "type": "uint32"
+        }
+      ],
+      "name": "setSnNb",
+      "outputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getK",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "name": "k",
+          "type": "uint32"
+        },
+        {
+          "name": "n",
+          "type": "uint32"
+        },
+        {
+          "name": "l",
+          "type": "uint32"
+        },
+        {
+          "name": "m",
+          "type": "uint32"
+        },
+        {
+          "name": "p",
+          "type": "uint32"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b60405160a0806105e483398101604052808051919060200180519190602001805191906020018051919060200180516000805463ffffffff191663ffffffff9889161767ffffffff0000000019166401000000009789169790970296909617604060020a63ffffffff021916680100000000000000009588169590950294909417608060020a63ffffffff0219167001000000000000000000000000000000009387169390930292909217606060020a63ffffffff0219166c010000000000000000000000009390951692909202939093178255506104ef915081906100f590396000f3006060604052600436106100e55763ffffffff7c0100000000000000000000000000000000000000000000000000000000600035041663083f563b81146100ea57806317982b16146101085780633e955225146101245780634904d81f1461015057806353ed5143146101635780635f086549146101b15780635fa96654146101cd5780636905f32c146101e0578063841b8d34146101f35780638c19f61014610206578063afb4d2ee14610222578063bf72113514610235578063c4b9910214610248578063de49e6c81461025b578063e7632fbc1461026e578063ee39e7a01461028a575b600080fd5b34156100f557600080fd5b61010663ffffffff6004351661029d565b005b341561011357600080fd5b61010663ffffffff600435166102d5565b341561012f57600080fd5b6101376102fd565b60405163ffffffff909116815260200160405180910390f35b341561015b57600080fd5b610137610311565b341561016e57600080fd5b61017661031d565b60405163ffffffff9586168152938516602085015291841660408085019190915290841660608401529216608082015260a001905180910390f35b34156101bc57600080fd5b61010663ffffffff6004351661036f565b34156101d857600080fd5b61013761038b565b34156101eb57600080fd5b6101376103a7565b34156101fe57600080fd5b6101376103bf565b341561021157600080fd5b61010663ffffffff600435166103d7565b341561022d57600080fd5b610137610407565b341561024057600080fd5b610137610427565b341561025357600080fd5b610137610447565b341561026657600080fd5b610137610463565b341561027957600080fd5b61010663ffffffff60043516610477565b341561029557600080fd5b6101376104b7565b6000805463ffffffff9092166c01000000000000000000000000026fffffffff00000000000000000000000019909216919091179055565b6000805463ffffffff9092166401000000000267ffffffff0000000019909216919091179055565b600054640100000000900463ffffffff1690565b60005463ffffffff1681565b60005463ffffffff80821692640100000000830482169268010000000000000000810483169270010000000000000000000000000000000082048116926c010000000000000000000000009092041690565b6000805463ffffffff191663ffffffff92909216919091179055565b6000546c01000000000000000000000000900463ffffffff1690565b60005468010000000000000000900463ffffffff1681565b60005468010000000000000000900463ffffffff1690565b6000805463ffffffff90921668010000000000000000026bffffffff000000000000000019909216919091179055565b600054700100000000000000000000000000000000900463ffffffff1690565b600054700100000000000000000000000000000000900463ffffffff1681565b6000546c01000000000000000000000000900463ffffffff1681565b600054640100000000900463ffffffff1681565b6000805463ffffffff9092167001000000000000000000000000000000000273ffffffff0000000000000000000000000000000019909216919091179055565b60005463ffffffff16905600a165627a7a72305820642bd59190ead512b84dd63a0deb1e0ac1a14ded36c2667e17b1deaf8f48ee5e0029",
+  "networks": {
+    "address": "0xd41079859Cb65f1962f09bAb192C6c292EbBA022"
+  },
+  "schemaVersion": "2.0.3",
+  "updatedAt": "2020-11-16T15:25:28.743Z"
+}

@@ -1,0 +1,2397 @@
+{
+  "version": "3.2",
+  "services": {
+    "Oracle": {
+      "container_name": "Oracle",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=0"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3000:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode1": {
+      "container_name": "StorageNode1",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=1"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3001:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode2": {
+      "container_name": "StorageNode2",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=2"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3002:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode3": {
+      "container_name": "StorageNode3",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=3"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3003:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode4": {
+      "container_name": "StorageNode4",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=4"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3004:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode5": {
+      "container_name": "StorageNode5",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=5"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3005:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode6": {
+      "container_name": "StorageNode6",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=6"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3006:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode7": {
+      "container_name": "StorageNode7",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=7"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3007:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode8": {
+      "container_name": "StorageNode8",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=8"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3008:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode9": {
+      "container_name": "StorageNode9",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=9"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3009:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode10": {
+      "container_name": "StorageNode10",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=10"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3010:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode11": {
+      "container_name": "StorageNode11",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=11"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3011:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode12": {
+      "container_name": "StorageNode12",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=12"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3012:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode13": {
+      "container_name": "StorageNode13",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=13"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3013:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode14": {
+      "container_name": "StorageNode14",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=14"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3014:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode15": {
+      "container_name": "StorageNode15",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=15"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3015:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode16": {
+      "container_name": "StorageNode16",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=16"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3016:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode17": {
+      "container_name": "StorageNode17",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=17"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3017:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode18": {
+      "container_name": "StorageNode18",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=18"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3018:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode19": {
+      "container_name": "StorageNode19",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=19"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3019:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode20": {
+      "container_name": "StorageNode20",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=20"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3020:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode21": {
+      "container_name": "StorageNode21",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=21"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3021:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode22": {
+      "container_name": "StorageNode22",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=22"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3022:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode23": {
+      "container_name": "StorageNode23",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=23"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3023:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode24": {
+      "container_name": "StorageNode24",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=24"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3024:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode25": {
+      "container_name": "StorageNode25",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=25"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3025:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode26": {
+      "container_name": "StorageNode26",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=26"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3026:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode27": {
+      "container_name": "StorageNode27",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=27"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3027:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode28": {
+      "container_name": "StorageNode28",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=28"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3028:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode29": {
+      "container_name": "StorageNode29",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=29"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3029:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode30": {
+      "container_name": "StorageNode30",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=30"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3030:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode31": {
+      "container_name": "StorageNode31",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=31"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3031:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode32": {
+      "container_name": "StorageNode32",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=32"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3032:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode33": {
+      "container_name": "StorageNode33",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=33"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3033:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode34": {
+      "container_name": "StorageNode34",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=34"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3034:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode35": {
+      "container_name": "StorageNode35",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=35"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3035:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode36": {
+      "container_name": "StorageNode36",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=36"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3036:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode37": {
+      "container_name": "StorageNode37",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=37"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3037:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode38": {
+      "container_name": "StorageNode38",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=38"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3038:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode39": {
+      "container_name": "StorageNode39",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=39"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3039:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode40": {
+      "container_name": "StorageNode40",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=40"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3040:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode41": {
+      "container_name": "StorageNode41",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=41"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3041:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode42": {
+      "container_name": "StorageNode42",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=42"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3042:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode43": {
+      "container_name": "StorageNode43",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=43"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3043:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode44": {
+      "container_name": "StorageNode44",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=44"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3044:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode45": {
+      "container_name": "StorageNode45",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=45"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3045:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode46": {
+      "container_name": "StorageNode46",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=46"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3046:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode47": {
+      "container_name": "StorageNode47",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=47"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3047:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode48": {
+      "container_name": "StorageNode48",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=48"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3048:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode49": {
+      "container_name": "StorageNode49",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=49"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3049:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode50": {
+      "container_name": "StorageNode50",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=50"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3050:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode51": {
+      "container_name": "StorageNode51",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=51"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3051:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode52": {
+      "container_name": "StorageNode52",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=52"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3052:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode53": {
+      "container_name": "StorageNode53",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=53"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3053:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode54": {
+      "container_name": "StorageNode54",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=54"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3054:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode55": {
+      "container_name": "StorageNode55",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=55"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3055:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode56": {
+      "container_name": "StorageNode56",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=56"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3056:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode57": {
+      "container_name": "StorageNode57",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=57"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3057:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode58": {
+      "container_name": "StorageNode58",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=58"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3058:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode59": {
+      "container_name": "StorageNode59",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=59"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3059:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode60": {
+      "container_name": "StorageNode60",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=60"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3060:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode61": {
+      "container_name": "StorageNode61",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=61"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3061:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode62": {
+      "container_name": "StorageNode62",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=62"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3062:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode63": {
+      "container_name": "StorageNode63",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=63"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3063:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode64": {
+      "container_name": "StorageNode64",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=64"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3064:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode65": {
+      "container_name": "StorageNode65",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=65"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3065:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode66": {
+      "container_name": "StorageNode66",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=66"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3066:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode67": {
+      "container_name": "StorageNode67",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=67"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3067:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode68": {
+      "container_name": "StorageNode68",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=68"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3068:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode69": {
+      "container_name": "StorageNode69",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=69"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3069:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode70": {
+      "container_name": "StorageNode70",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=70"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3070:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode71": {
+      "container_name": "StorageNode71",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=71"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3071:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode72": {
+      "container_name": "StorageNode72",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=72"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3072:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode73": {
+      "container_name": "StorageNode73",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=73"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3073:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode74": {
+      "container_name": "StorageNode74",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=74"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3074:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode75": {
+      "container_name": "StorageNode75",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=75"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3075:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode76": {
+      "container_name": "StorageNode76",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=76"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3076:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode77": {
+      "container_name": "StorageNode77",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=77"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3077:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode78": {
+      "container_name": "StorageNode78",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=78"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3078:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode79": {
+      "container_name": "StorageNode79",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=79"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3079:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode80": {
+      "container_name": "StorageNode80",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=80"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3080:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode81": {
+      "container_name": "StorageNode81",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=81"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3081:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode82": {
+      "container_name": "StorageNode82",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=82"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3082:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode83": {
+      "container_name": "StorageNode83",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=83"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3083:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode84": {
+      "container_name": "StorageNode84",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=84"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3084:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode85": {
+      "container_name": "StorageNode85",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=85"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3085:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode86": {
+      "container_name": "StorageNode86",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=86"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3086:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode87": {
+      "container_name": "StorageNode87",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=87"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3087:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode88": {
+      "container_name": "StorageNode88",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=88"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3088:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode89": {
+      "container_name": "StorageNode89",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=89"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3089:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode90": {
+      "container_name": "StorageNode90",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=90"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3090:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode91": {
+      "container_name": "StorageNode91",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=91"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3091:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode92": {
+      "container_name": "StorageNode92",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=92"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3092:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode93": {
+      "container_name": "StorageNode93",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=93"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3093:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode94": {
+      "container_name": "StorageNode94",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=94"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3094:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode95": {
+      "container_name": "StorageNode95",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=95"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3095:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode96": {
+      "container_name": "StorageNode96",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=96"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3096:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode97": {
+      "container_name": "StorageNode97",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=97"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3097:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode98": {
+      "container_name": "StorageNode98",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=98"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3098:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode99": {
+      "container_name": "StorageNode99",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=99"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3099:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "StorageNode100": {
+      "container_name": "StorageNode100",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=100"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "./app/modules/libpdp/data/:/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3100:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "Validator1": {
+      "container_name": "Validator1",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=101"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3101:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "Validator2": {
+      "container_name": "Validator2",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=102"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3102:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    },
+    "TrustedDealer1": {
+      "container_name": "TrustedDealer1",
+      "image": "node:8-jessie",
+      "working_dir": "/home/node/app",
+      "environment": [
+        "NODE_ENV=test",
+        "NODE=103"
+      ],
+      "volumes": [
+        {
+          "type": "bind",
+          "source": "./",
+          "target": "/home/node/app"
+        },
+        "/home/node/app/node_modules/",
+        "/home/node/app/app/modules/libpdp/storage/",
+        "/home/node/app/app/modules/libpdp/validation/"
+      ],
+      "ports": [
+        "3103:3000"
+      ],
+      "command": "bash -c \"git config --global url.https://github.com/.insteadOf git://github.com/ &&\n         npm install &&\n         cp modified_web3_formatters.js node_modules/web3-core-helpers/src/formatters.js &&\n         npm start\"\n"
+    }
+  }
+}

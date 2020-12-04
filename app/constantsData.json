@@ -1,0 +1,732 @@
+{
+  "WEB3_CONFS": [
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "Oracle",
+      "ETH_KEY": "0x9144eC01E630f36f9AFa70c4C843E29a35A78A2D",
+      "CONTAINER_PORT": 3000
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode1",
+      "ETH_KEY": "0xB3bE75F12254Ed3BF50ca3D62e91F8CB69c326a3",
+      "CONTAINER_PORT": 3001
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode2",
+      "ETH_KEY": "0xCdf1AfF0b6fa1303a47914a2aD6b8F21912b76EA",
+      "CONTAINER_PORT": 3002
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode3",
+      "ETH_KEY": "0xE1196EbD6B51D91892f51992d3733D319b9E7394",
+      "CONTAINER_PORT": 3003
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode4",
+      "ETH_KEY": "0xd9AF7BC80c22eAEe99e32237aA09eb5e26494928",
+      "CONTAINER_PORT": 3004
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode5",
+      "ETH_KEY": "0x16272701aB57DE1b2bdE4c49cDbBd689fe52a30b",
+      "CONTAINER_PORT": 3005
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode6",
+      "ETH_KEY": "0xE63cEf9f4687249Ab9C3b081826CF8fb1f49c05c",
+      "CONTAINER_PORT": 3006
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode7",
+      "ETH_KEY": "0x4e357415174CD97940C862B5a184f3bf2ea11702",
+      "CONTAINER_PORT": 3007
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode8",
+      "ETH_KEY": "0x2cE9fF98FBb64c931394A3ff056FEDA485e54ACE",
+      "CONTAINER_PORT": 3008
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode9",
+      "ETH_KEY": "0x0743542a39549876bc4BCA5B9acC88FAC56F164d",
+      "CONTAINER_PORT": 3009
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode10",
+      "ETH_KEY": "0x97804aF310b7a68997EC0EeE156E8520D97598Bb",
+      "CONTAINER_PORT": 3010
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode11",
+      "ETH_KEY": "0xf729Fa2C7F7468350dE39Aa36D6907398d2021AE",
+      "CONTAINER_PORT": 3011
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode12",
+      "ETH_KEY": "0x4D152f403c53d991b7C08C4FBb1f8D56cb068FC8",
+      "CONTAINER_PORT": 3012
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode13",
+      "ETH_KEY": "0x66c667802DC0Cb8051b4772b0Cf06bbA1a4b922d",
+      "CONTAINER_PORT": 3013
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode14",
+      "ETH_KEY": "0xb04292F22383643757a4df4568E70008096a2b81",
+      "CONTAINER_PORT": 3014
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode15",
+      "ETH_KEY": "0xbb6E5dA15aB199115353d3e45fbA5283946A6bDb",
+      "CONTAINER_PORT": 3015
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode16",
+      "ETH_KEY": "0x1c6fe5Ca0C6AEcB6e534156680839715Ba150C02",
+      "CONTAINER_PORT": 3016
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode17",
+      "ETH_KEY": "0xaF1a34568753950C4Fb2BC61b465E4585c7763D7",
+      "CONTAINER_PORT": 3017
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode18",
+      "ETH_KEY": "0x177fD60de4e693F924200c32816643281FbA4708",
+      "CONTAINER_PORT": 3018
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode19",
+      "ETH_KEY": "0x826b14fCA2DaFff94626502ECE669D9AacceF5A7",
+      "CONTAINER_PORT": 3019
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode20",
+      "ETH_KEY": "0x3c27940E5a0A133a81622623Fb9233767D6C1638",
+      "CONTAINER_PORT": 3020
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode21",
+      "ETH_KEY": "0x00754d7492ec1b91B696DD5492A8ccd09F2420B2",
+      "CONTAINER_PORT": 3021
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode22",
+      "ETH_KEY": "0x48819a9b38A2f56002f85E528caaC0Cf3B400115",
+      "CONTAINER_PORT": 3022
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode23",
+      "ETH_KEY": "0xE835e80d0BBC01e63BaA0C4358dee9Aff1a8192C",
+      "CONTAINER_PORT": 3023
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode24",
+      "ETH_KEY": "0xAB6E2C201aD1A82E3879F62F54E1FA7600FC808d",
+      "CONTAINER_PORT": 3024
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode25",
+      "ETH_KEY": "0xf43D2f4b380CA17FC41cA6F1F2CF2c54bB98DEa4",
+      "CONTAINER_PORT": 3025
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode26",
+      "ETH_KEY": "0x0e1D5A299C2d6ef3CF9E52Cb5048a52b43e1463F",
+      "CONTAINER_PORT": 3026
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode27",
+      "ETH_KEY": "0x8D52c6a3C2b4B6a40a80d9820004Cca7d95De540",
+      "CONTAINER_PORT": 3027
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode28",
+      "ETH_KEY": "0xD7b997427F7D28aE01cf6338Bfe5aF64Ed6CDC54",
+      "CONTAINER_PORT": 3028
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode29",
+      "ETH_KEY": "0xdE0Bb046eE04782d2a07aeFF9415e02866d308c3",
+      "CONTAINER_PORT": 3029
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode30",
+      "ETH_KEY": "0x1ca9CDae9bB37007D29D8B8d0Cf393CaB222ac39",
+      "CONTAINER_PORT": 3030
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode31",
+      "ETH_KEY": "0xB8D2571B78Ba212ef30326448DD17548871B5EB8",
+      "CONTAINER_PORT": 3031
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode32",
+      "ETH_KEY": "0xD00d994Ed1e82EBCDF00683D7B7036573216B91B",
+      "CONTAINER_PORT": 3032
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode33",
+      "ETH_KEY": "0xAf0598fEC42a8798FDCE703568CAD89b9C97591E",
+      "CONTAINER_PORT": 3033
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode34",
+      "ETH_KEY": "0x9De0F31496C46015B88762541Ad911ff35e6E4da",
+      "CONTAINER_PORT": 3034
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode35",
+      "ETH_KEY": "0xA87e167CDA8e6A23df61A5906b6317df933560eF",
+      "CONTAINER_PORT": 3035
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode36",
+      "ETH_KEY": "0x486C6Ab171105eE49aA150634f26E5Ef4706Cdc1",
+      "CONTAINER_PORT": 3036
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode37",
+      "ETH_KEY": "0x1dE46525aec87202cD62E0631E556b2Ce70ad548",
+      "CONTAINER_PORT": 3037
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode38",
+      "ETH_KEY": "0x954A50fF61adA66e709597D70435234c8C150107",
+      "CONTAINER_PORT": 3038
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode39",
+      "ETH_KEY": "0xE616Aad640431A8e8fbfd7710EeedA8704c0bb99",
+      "CONTAINER_PORT": 3039
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode40",
+      "ETH_KEY": "0x1B9E6e958460C0529664e8aA8c07A52C37EdC711",
+      "CONTAINER_PORT": 3040
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode41",
+      "ETH_KEY": "0xE7e10f6B70F2d7A8BeADD5269BbC388492133aA8",
+      "CONTAINER_PORT": 3041
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode42",
+      "ETH_KEY": "0xCdd6C0bB6FD4524073ed82c6154CC5d8Cd1c7565",
+      "CONTAINER_PORT": 3042
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode43",
+      "ETH_KEY": "0x468dafb212389C12BBFC32F063B2F83BEc20C0f3",
+      "CONTAINER_PORT": 3043
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode44",
+      "ETH_KEY": "0x32C4DC5c6bb65544083875e7D5CAF642B99Ff49A",
+      "CONTAINER_PORT": 3044
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode45",
+      "ETH_KEY": "0x51Ea3DC14765774c8243DfC27e6aCfa8768338c8",
+      "CONTAINER_PORT": 3045
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode46",
+      "ETH_KEY": "0x82EDD364480132ad6fD2828c38dFcF50E031BcB2",
+      "CONTAINER_PORT": 3046
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode47",
+      "ETH_KEY": "0xc3a956d3A97C6C3700EFF3eB08590d297675332a",
+      "CONTAINER_PORT": 3047
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode48",
+      "ETH_KEY": "0xDa21233F1d9F8beB8072890AE4dC676AcB3E4a31",
+      "CONTAINER_PORT": 3048
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode49",
+      "ETH_KEY": "0xe1BD7c1dF9FA1AD18159B760C681e594ce06B5E9",
+      "CONTAINER_PORT": 3049
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode50",
+      "ETH_KEY": "0x4503714E999e339B1c4AD47f01E162b4fA595C6f",
+      "CONTAINER_PORT": 3050
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode51",
+      "ETH_KEY": "0xC1D443c9B8A6a8D281801f02F53fc4E429F17fE8",
+      "CONTAINER_PORT": 3051
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode52",
+      "ETH_KEY": "0xFe1a586837c4478160719cFF1093C55481330D99",
+      "CONTAINER_PORT": 3052
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode53",
+      "ETH_KEY": "0xa057cD0E634ee70ad29686882dc30A60d7E4cf3F",
+      "CONTAINER_PORT": 3053
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode54",
+      "ETH_KEY": "0xdf6C6a83F286b12B021809130F5E6841709cbc0F",
+      "CONTAINER_PORT": 3054
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode55",
+      "ETH_KEY": "0x01FeCE40E7C2117589112640c3919a3B905CAbd2",
+      "CONTAINER_PORT": 3055
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode56",
+      "ETH_KEY": "0x361224f417Ebba46596F4c8802891976824926e6",
+      "CONTAINER_PORT": 3056
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode57",
+      "ETH_KEY": "0xF72846A79D37CefF125b16D8a33C4A3f649962a9",
+      "CONTAINER_PORT": 3057
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode58",
+      "ETH_KEY": "0x3fdabbD3955b043b305f210aAC27fB7937aC0918",
+      "CONTAINER_PORT": 3058
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode59",
+      "ETH_KEY": "0xc8ADAFEdB3Fe43CE1F3196f079Eee33b9551F18f",
+      "CONTAINER_PORT": 3059
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode60",
+      "ETH_KEY": "0x245f8591676a7D13912F4b380Be516F2A3430a8B",
+      "CONTAINER_PORT": 3060
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode61",
+      "ETH_KEY": "0x902dE9d9322B630e51aAb9a6D5306047f8e7fD60",
+      "CONTAINER_PORT": 3061
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode62",
+      "ETH_KEY": "0xd647af04c442cfbaDB59719BfD8984676eC1810c",
+      "CONTAINER_PORT": 3062
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode63",
+      "ETH_KEY": "0xE6136Ffe19B3395E9409Dd235EA1fd8930596655",
+      "CONTAINER_PORT": 3063
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode64",
+      "ETH_KEY": "0x86BB3a082970ecFe36FD6AC222b96ef344A9240A",
+      "CONTAINER_PORT": 3064
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode65",
+      "ETH_KEY": "0x197e592205349c4e4EaF38365741871Ae0609b4e",
+      "CONTAINER_PORT": 3065
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode66",
+      "ETH_KEY": "0x04C9F9a5d86d8971EbFBeFb7963A95c932206937",
+      "CONTAINER_PORT": 3066
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode67",
+      "ETH_KEY": "0x7f681e417d3FB18A9FefAf4083caC456d911FC31",
+      "CONTAINER_PORT": 3067
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode68",
+      "ETH_KEY": "0xaEB862Bd77140e317D3Aa3D392E90177cfc8cfce",
+      "CONTAINER_PORT": 3068
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode69",
+      "ETH_KEY": "0x130D0b255f3aa83898F08D435688667236E4edFB",
+      "CONTAINER_PORT": 3069
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode70",
+      "ETH_KEY": "0x5FE8533d5E75A32B63049E357ca7dF75FD79247F",
+      "CONTAINER_PORT": 3070
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode71",
+      "ETH_KEY": "0x09DbF5469DCe6E1EaB8cFEf3a586cD45848da745",
+      "CONTAINER_PORT": 3071
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode72",
+      "ETH_KEY": "0xFdC524dA4c20840838E73e4e9256315F1946fb4C",
+      "CONTAINER_PORT": 3072
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode73",
+      "ETH_KEY": "0x3d8885047AF20642c6C7b1F3a111ec8C0a90a033",
+      "CONTAINER_PORT": 3073
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode74",
+      "ETH_KEY": "0xCCdcbD6155CF7661AcF4e5b8812D4d4bA86A58d7",
+      "CONTAINER_PORT": 3074
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode75",
+      "ETH_KEY": "0xc4B3823701f12A0a4697FDD7B22Ba232dE4c98A7",
+      "CONTAINER_PORT": 3075
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode76",
+      "ETH_KEY": "0x3874FA9de7A9aF5956560EB6D2554645edaa24A5",
+      "CONTAINER_PORT": 3076
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode77",
+      "ETH_KEY": "0x9c7C28d48F4658DC6eF8f065F458B768631FCE45",
+      "CONTAINER_PORT": 3077
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode78",
+      "ETH_KEY": "0x36B284353675b98D3a130039356cBE1D7730E162",
+      "CONTAINER_PORT": 3078
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode79",
+      "ETH_KEY": "0x35bb91E1E0a5e1eaA29CC7F3CfeC4c0A0a466587",
+      "CONTAINER_PORT": 3079
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode80",
+      "ETH_KEY": "0x64FC475FC637e35Bf612F042FbbB0c6a1dc171b6",
+      "CONTAINER_PORT": 3080
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode81",
+      "ETH_KEY": "0xd9Ff8aF0F310b51855Ff0F4269AcB4ceB3F5430e",
+      "CONTAINER_PORT": 3081
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode82",
+      "ETH_KEY": "0xBbF453C14b0c5dA9029Da3E7f20EdA58e516a5B0",
+      "CONTAINER_PORT": 3082
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode83",
+      "ETH_KEY": "0x79af76625B10b350e017fD5eC3a45DFdA40B894B",
+      "CONTAINER_PORT": 3083
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode84",
+      "ETH_KEY": "0xd9E411F953B019Aa8c237a4FB97dD1Ab5ba6D39A",
+      "CONTAINER_PORT": 3084
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode85",
+      "ETH_KEY": "0xE20441432C00650805d3fa4B85ED7C54D4ea3bF0",
+      "CONTAINER_PORT": 3085
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode86",
+      "ETH_KEY": "0x0eAF5625f99a9aA768a641e39E6e9cbE78cBbbDF",
+      "CONTAINER_PORT": 3086
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode87",
+      "ETH_KEY": "0x1e4df1b1433627aF84A2AcCC10798ECBf990Ce6E",
+      "CONTAINER_PORT": 3087
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode88",
+      "ETH_KEY": "0xB5DF8b831882ADA391DD620338BdA7588610FE6f",
+      "CONTAINER_PORT": 3088
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode89",
+      "ETH_KEY": "0x447C1BD21B3F2e182f540a918450B687db1D9f71",
+      "CONTAINER_PORT": 3089
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode90",
+      "ETH_KEY": "0x03E989fbA7e327F6cFCc0dd6eF20636c3e9437B9",
+      "CONTAINER_PORT": 3090
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode91",
+      "ETH_KEY": "0x5E8c9883d8c2f2E0D6C51f429996B5808C30ECac",
+      "CONTAINER_PORT": 3091
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode92",
+      "ETH_KEY": "0x4B9092999ca1D3dc9872F56B331603D19ccBD6C5",
+      "CONTAINER_PORT": 3092
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode93",
+      "ETH_KEY": "0xC00D034F9c4CefAAc7aFd3E3B29460e707a0763f",
+      "CONTAINER_PORT": 3093
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode94",
+      "ETH_KEY": "0xd97eC6a258F832FBbfeF4Dc90377820F95D61AB4",
+      "CONTAINER_PORT": 3094
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22505,
+      "HOST_APP_LINUX": "StorageNode95",
+      "ETH_KEY": "0x1F1536998b938329f22f1473BAB8a1913ae904E3",
+      "CONTAINER_PORT": 3095
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22605,
+      "HOST_APP_LINUX": "StorageNode96",
+      "ETH_KEY": "0x8a87B739011841715E2824Cf48CC5638768b8Fcd",
+      "CONTAINER_PORT": 3096
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "StorageNode97",
+      "ETH_KEY": "0x7616762408295Abb5E75d7977C5B543a9aa301c4",
+      "CONTAINER_PORT": 3097
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "StorageNode98",
+      "ETH_KEY": "0x884fF51515Bf145F73BD8685E9a25652d23a7E53",
+      "CONTAINER_PORT": 3098
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22305,
+      "HOST_APP_LINUX": "StorageNode99",
+      "ETH_KEY": "0xAd267254f490bB33eFAE32CC7c957De239a98Ffd",
+      "CONTAINER_PORT": 3099
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22405,
+      "HOST_APP_LINUX": "StorageNode100",
+      "ETH_KEY": "0xA8A4cdF54D6Eb17913c56B2b9E6B6ecDC314E427",
+      "CONTAINER_PORT": 3100
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "Validator1",
+      "ETH_KEY": "0xBb46650895c9AB4f153a28907365aAaa3807d517",
+      "CONTAINER_PORT": 3101
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22205,
+      "HOST_APP_LINUX": "Validator2",
+      "ETH_KEY": "0x68e084AA53CE4555f9C61CBabd4Ae383Ffe744b9",
+      "CONTAINER_PORT": 3102
+    },
+    {
+      "HOST_LINUX": "10.0.0.133",
+      "PORT": 22105,
+      "HOST_APP_LINUX": "TrustedDealer1",
+      "ETH_KEY": "0x5B39298174c014DD14a280536BC7dCC587Fccc48",
+      "CONTAINER_PORT": 3103
+    }
+  ]
+}

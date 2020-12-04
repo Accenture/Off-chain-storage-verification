@@ -1,0 +1,12 @@
+{
+	"server": {
+		"website": {
+			"name": "Off-chain Storage"
+		},
+		"production_mode": false,
+		"ssl": "false",
+		"http_port": 3000,
+		"https_port": 443,
+		"serverIp": "52.47.179.8"
+	}
+}
