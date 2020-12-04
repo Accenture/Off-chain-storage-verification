@@ -18,7 +18,9 @@ Get Node.js version 10.13.0 installed then you can run the following commands on
 
     npm i    
     npm run compile
-    In the file ```node_modules/web3-core-helpers/src/formatters.js```, line 239, replace ```block.timestamp = utils.hexToNumber(block.timestamp)``` by ``` block.timestamp = Number.parseInt(parseInt(block.timestamp).toString().substring(0,10))```
+    
+In the file ```node_modules/web3-core-helpers/src/formatters.js```, line 239, replace ```block.timestamp = utils.hexToNumber(block.timestamp)``` by ``` block.timestamp = Number.parseInt(parseInt(block.timestamp).toString().substring(0,10))```
+    
     npm start
 
 
