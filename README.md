@@ -11,10 +11,10 @@ Follow instructions in the [libpdp](https://github.com/Accenture/libpdp) project
 
 ### Get the blockchain running :
 
-Get the nodes of the internal blockchain running using [Quorum Maker](https://github.com/synechron-finlabs/quorum-maker)
+Get the nodes of a blockchain running using [Quorum Maker](https://github.com/synechron-finlabs/quorum-maker)
 
 ### Get the installations done :
-Get Node.js version 10.13.0 installed then you can run the following commands once you're in the repository off-chain-storage-api :
+Install and start the server by following the commands below:
 
     npm i    
     npm run compile
