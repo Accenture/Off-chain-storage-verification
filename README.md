@@ -4,7 +4,7 @@ An experimental implementation of [Audita: A Blockchain-based Auditing Framework
 
 ## Building the libpdp library :
 
-Follow instructions in the [libpdp](link) project.
+Follow instructions in the [libpdp](https://github.com/Accenture/libpdp) project.
 
 
 ## Running the storage on different machines for each network participant
@@ -19,7 +19,9 @@ Get Node.js version 10.13.0 installed then you can run the following commands on
     npm i    
     npm run compile
     
-In the file ```node_modules/web3-core-helpers/src/formatters.js```, line 239, replace ```block.timestamp = utils.hexToNumber(block.timestamp)``` by ``` block.timestamp = Number.parseInt(parseInt(block.timestamp).toString().substring(0,10))```
+In the file ```node_modules/web3-core-helpers/src/formatters.js```,
+replace line 239 ```block.timestamp = utils.hexToNumber(block.timestamp)``` by 
+``` block.timestamp = Number.parseInt(parseInt(block.timestamp).toString().substring(0,10))```
     
     npm start
 
